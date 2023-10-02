@@ -7,3 +7,4 @@ out/
 project/project/
 jflex-*.jar
 /.bsp/sbt.json
+.run

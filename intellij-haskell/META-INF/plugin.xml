@@ -1,7 +1,7 @@
 <idea-plugin require-restart="true">
     <id>intellij.haskell</id>
     <name>IntelliJ-Haskell</name>
-    <version>1.0.0-beta88</version>
+    <version>1.1.0-beta1</version>
     <vendor email="rikvdkleij@gmail.com">Rik van der Kleij</vendor>
 
     <description><![CDATA[
@@ -20,6 +20,12 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        <p>1.1.0-beta1</p>
+        <ul>
+            <li>Fix support for 2023.2</li>
+            <li>Update Haskell tools to LTS-21</li>
+            <li>Bump to JDK17</li>
+        </ul>
         <p>1.0.0-beta88</p>
         <ul>
             <li>Various improvements and fixes</li>
@@ -441,7 +447,7 @@
     </change-notes>
 
     <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="211"/>
+    <idea-version since-build="232"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- File types -->
@@ -622,6 +628,7 @@
 
         <!-- Configuration -->
         <applicationConfigurable
+                displayName="IntelliJ-Haskell"
                 groupId="language"
                 id="Haskell.Configurable"
                 instance="intellij.haskell.settings.HaskellConfigurable"/>

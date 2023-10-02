@@ -45,7 +45,6 @@ import intellij.haskell.util._
 import intellij.haskell.{HaskellFile, HaskellFileType, HaskellNotificationGroup}
 
 import scala.annotation.tailrec
-import scala.collection.Iterable
 import scala.jdk.CollectionConverters._
 
 class HaskellAnnotator extends ExternalAnnotator[PsiFile, CompilationResult] {
