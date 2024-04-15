@@ -32,7 +32,7 @@ jobs:
         java-version: '17'
         distribution: 'adopt'
     - name: Build plugin
-      run: sbt dist
+      run: sbt packagePlugin
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
