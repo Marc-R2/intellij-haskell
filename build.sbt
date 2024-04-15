@@ -18,7 +18,7 @@ lazy val intellijHaskell = (project in file(".")).
   settings(
     name := "IntelliJ Haskell",
     javacOptions in Global ++= Seq("-source", "17", "-target", "17"),
-    scalacOptions in Global ++= Seq("-release:17", "-deprecation", "-feature", "-unchecked"),
+    scalacOptions in Global ++= Seq("-deprecation", "-feature", "-unchecked"),
     libraryDependencies += scalaTest,
     libraryDependencies += sprayJson,
     libraryDependencies += snakeYaml,
